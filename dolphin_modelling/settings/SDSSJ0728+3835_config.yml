@@ -1,0 +1,168 @@
+band:
+- F606W
+- F814W
+fitting:
+  mcmc_settings:
+    burnin_step: 0
+    iteration_step: 3000
+    walker_ratio: 16
+  psf_iteration: false
+  psf_iteration_settings:
+    block_neighbor: 0.0
+    psf_iteration_factor: 0.5
+    psf_iteration_num: 50
+    psf_symmetry: 4
+  pso: true
+  pso_settings:
+    num_iteration: 150
+    num_particle: 192
+  sampler: MCMC
+  sampling: true
+guess_params:
+  lens:
+    0:
+      theta_E: 1.25
+kwargs_constraints:
+  joint_lens_light_with_lens_light:
+  - - 0
+    - 1
+    - - e1
+      - e2
+      - center_x
+      - center_y
+  - - 0
+    - 2
+    - - e1
+      - e2
+      - R_sersic
+      - center_x
+      - center_y
+  - - 0
+    - 3
+    - - e1
+      - e2
+      - center_x
+      - center_y
+  - - 1
+    - 3
+    - - R_sersic
+  joint_lens_with_light:
+  - - 0
+    - 0
+    - - center_x
+      - center_y
+  joint_source_with_source:
+  - - 0
+    - 1
+    - - center_x
+      - center_y
+  - - 0
+    - 2
+    - - center_x
+      - center_y
+  - - 0
+    - 3
+    - - center_x
+      - center_y
+  - - 1
+    - 3
+    - - e1
+      - e2
+      - R_sersic
+lens_light_option:
+  fix:
+    0:
+      n_sersic: 4.0
+    1:
+      n_sersic: 1.0
+    2:
+      n_sersic: 4.0
+    3:
+      n_sersic: 1.0
+lens_option:
+  centroid_init:
+  - 0.0
+  - 0.0
+  constrain_position_angle_from_lens_light: 15
+mask:
+  centroid_offset:
+  - - 0.1483
+    - -0.0621
+  - - 0.1337
+    - -0.0338
+  custom_mask:
+  - null
+  - null
+  dec_at_xy_0:
+  - 0.09326126398267087
+  - 2.8076273356291623
+  extra_regions:
+  - - - 0.1483
+      - -0.0621
+      - 0.4
+    - - -2.35
+      - 0.1
+      - 0.3
+  - - - 0.1337
+      - -0.0338
+      - 0.4
+    - - -2.35
+      - 0.1
+      - 0.3
+  ra_at_xy_0:
+  - -4.927463983505222
+  - 4.0772984888194115
+  radius:
+  - 2.65
+  - 2.65
+  size:
+  - 140
+  - 140
+  transform_matrix:
+  - - - 0.03584477553600649
+      - 0.03454756708549667
+    - - 0.034496828171751676
+      - -0.03582913194293269
+  - - - -0.009077579921566162
+      - -0.049169541347282575
+    - - -0.04918390065165261
+      - 0.00907493871409315
+model:
+  lens:
+  - PEMD
+  - SHEAR_GAMMA_PSI
+  lens_light:
+  - SERSIC_ELLIPSE
+  - SERSIC_ELLIPSE
+  - SERSIC_ELLIPSE
+  - SERSIC_ELLIPSE
+  lens_light_band_indices:
+  - 0
+  - 0
+  - 1
+  - 1
+  point_source: []
+  source_light:
+  - SHAPELETS
+  - SERSIC_ELLIPSE
+  - SHAPELETS
+  - SERSIC_ELLIPSE
+  source_light_band_indices:
+  - 0
+  - 0
+  - 1
+  - 1
+numeric_option:
+  supersampling_factor:
+  - 2
+pixel_size: 0.04
+point_source_option:
+  bound: 0.0
+  dec_init: []
+  ra_init: []
+source_light_option:
+  n_max:
+  - 6
+  - 6
+  shapelet_scale_logarithmic_prior: true
+system_name: SDSSJ0728+3835

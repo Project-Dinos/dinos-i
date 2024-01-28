@@ -1,0 +1,24 @@
+#!/bin/bash                                                                    
+#SBATCH --job-name="Series1"                              
+#SBATCH --output=Series1_sbatch.out
+#SBATCH --error=Series1_sbatch.err                      
+#SBATCH --partition=broadwl                                                        
+#SBATCH --account=pi-jfrieman       
+#SBATCH -t 24:00:00                                                              
+#SBATCH --nodes=1  
+#SBATCH --ntasks-per-node=16                                                            
+#SBATCH --exclusive                                                            
+#SBATCH --mail-user=chinyi@uchicago.edu                                          
+#SBATCH --mail-type=ALL    
+
+
+run_id="$1"
+lens_name="$2"
+
+
+module load python
+conda activate astroconda
+
+
+echo $lens_name $run_id
+mpirun -np 16 python3 /home/chinyi/SLACS_directory/hpc/swim.py $lens_name $run_id 
