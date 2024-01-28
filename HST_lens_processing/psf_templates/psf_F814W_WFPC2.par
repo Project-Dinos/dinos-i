@@ -1,0 +1,111 @@
+&BeginPar7.5
+psf_F814W_WFPC2  # Output PSF file rootname
+/home/s1/chinyi/tinytim/wfpc2wf3.tab  # Name of Zernike table file
+/home/s1/chinyi/tinytim/wfpc2wf3.pup  # Name of pupil table file
+00-00-0000 # Observation date (dd-mm-yyyy)
+WFPC_II_WFC3  # Camera
+13  # Camera ID number
+f814w  # Filter
+bpgs_46  # Spectrum file
+-1.000000  # Major axis jitter in mas (-1 = no jitter)
+-1.000000  # Minor axis jitter in mas
+0.000000  # Angle of jitter major axis in deg from +X axis
+1  # Number of positions
+400 400  # Position 1
+7.994  # PSF diameter in arcsecs
+1  # Skip wavelengths with low weights? (0=no)
+0.010000  # Min good weight limit coefficient
+18  # Number of wavelengths
+0.699393 0.006044 512 # Wavelength 1 (microns), weight, grid size
+0.715163 0.108301 512 # Wavelength 2 (microns), weight, grid size
+0.730933 0.116012 512 # Wavelength 3 (microns), weight, grid size
+0.746703 0.098200 512 # Wavelength 4 (microns), weight, grid size
+0.762473 0.089929 512 # Wavelength 5 (microns), weight, grid size
+0.778243 0.085774 512 # Wavelength 6 (microns), weight, grid size
+0.794013 0.076937 512 # Wavelength 7 (microns), weight, grid size
+0.809783 0.069378 512 # Wavelength 8 (microns), weight, grid size
+0.825553 0.063531 512 # Wavelength 9 (microns), weight, grid size
+0.841323 0.054010 512 # Wavelength 10 (microns), weight, grid size
+0.857093 0.048159 512 # Wavelength 11 (microns), weight, grid size
+0.872863 0.040761 512 # Wavelength 12 (microns), weight, grid size
+0.888633 0.035888 512 # Wavelength 13 (microns), weight, grid size
+0.904403 0.032637 512 # Wavelength 14 (microns), weight, grid size
+0.920173 0.030494 512 # Wavelength 15 (microns), weight, grid size
+0.935943 0.022446 512 # Wavelength 16 (microns), weight, grid size
+0.951713 0.016534 512 # Wavelength 17 (microns), weight, grid size
+0.967483 0.004967 512 # Wavelength 18 (microns), weight, grid size
+80  # Integrated PSF dimension (pixels)
+0.080000  # Integrated PSF scaling (arcsec)
+1.000000  # Subsampling factor (1 = normal)
+2  #  Use mirror maps? (0 = no, otherwise yes)
+1  #  Adjust for WFPC2 field aberrations? (0=no)
+1  #  Apply WFPC2 pixel scattering (0=no)
+1  #  Apply WFPC2 halo (if F1042M) (0=no)
+0  # Write out pupil map at 1st wavelength?
+0  # Write out wave map at 1st wavelength?
+0  # Write out crit psf at 1st wavelength & stop?
+# Pupil Table : wfpc2wf3.pup
+# Do not change the order of these entries!
+# Date : July 2000
+# WFPC2 WFC3 data 
+#-----------------------------------------------------------------------------
+#
+# Optical Telescope Assembly pupil information
+#
+ 0.330  = OTA Secondary Mirror Radius
+ 0.022  = OTA Spider Width 
+#
+# Mirror pad positions and radii
+#
+  0.8921  0.0000 0.065 = OTA Pad 1 (V3, V2, Pad Radius)
+ -0.4615  0.7555 0.065 = OTA Pad 2
+ -0.4564 -0.7606 0.065 = OTA Pad 3
+#
+#
+  100 1200 = min, max detector wavelength (nm)
+  388  408 = WFPC2 WFC3 obscuration alignment center
+     0.434 = WFPC2 WFC Secondary Mirror Radius
+     0.050 = WFPC2 WFC Spider Width
+      135. = WFPC2 WFC Chip 3 Rotation relative to OTA
+   0.09993 = WFPC2 WFC pixel size (arcsec)
+  -1.444 -47.322  = WFPC2 WFC chip 3 detector center V2,V3 pupil coordinates
+#
+# WFPC2 WF3 field dependent aberration coefficients
+#
+  1.584E-06 -2.775E-05  1.972E-08 -6.270E-08  1.775E-08  # Focus   Z4
+  1.096E-05 -2.484E-05  5.530E-09 -2.153E-08 -5.346E-07  # X Astig Z5
+  4.182E-05  1.627E-05 -3.003E-08  1.052E-07  6.792E-08  # Y Astig Z6
+ -8.826E-05  1.007E-04  1.117E-07  7.804E-08 -1.329E-08  # X Coma  Z7
+  3.692E-05  3.866E-05 -7.602E-08 -2.768E-08  7.510E-08  # Y Coma  Z8
+#
+# WFPC2 CCD Pixel Scattering Function (estimates charge diffusion)
+#
+0.0125 0.05 0.0125
+0.0500 0.75 0.0500
+0.0125 0.05 0.0125
+# Zernike file for WFPC2 WFC3
+# July 1994
+  547.     # Reference wavelength (nm)
+  22       # Last Zernike in file
+  0.       # Z1 = (Not used)
+  0.       # Z2 = X (V2) tilt
+  0.       # Z3 = Y (V3) tilt
+-0.117000 # Z4 = Focus for center of chip
+  0.0230   # Z5 = 0 degree astigmatism
+  0.0206   # Z6 = 45 degree astigmatism
+  0.       # Z7 = X (V2) coma
+  0.       # Z8 = Y (V3) coma
+  0.0017   # Z9 = X clover
+  0.0238   # Z10 = Y clover
+ -0.0484   # Z11 = 3rd order spherical
+  0.       # Z12 = 0 degree Spherical astigmatism
+  0.       # Z13 = 45 degree Spherical astigmatism
+  0.       # Z14 = X Ashtray
+  0.       # Z15 = Y Ashtray
+  0.       # Z16
+  0.       # Z17
+  0.       # Z18
+  0.       # Z19
+  0.       # Z20
+  0.       # Z21
+  0.0064   # Z22 = 5th order spherical

@@ -1,0 +1,265 @@
+&BeginPar7.5
+psf_F160W_WFC3  # Output PSF file rootname
+/home/s1/chinyi/tinytim/wfc3_ir.tab  # Name of Zernike table file
+/home/s1/chinyi/tinytim/wfc3_ir.pup  # Name of pupil table file
+00-00-0000 # Observation date (dd-mm-yyyy)
+WFC3_IR  # Camera
+30  # Camera ID number
+f160w  # Filter
+bpgs_46  # Spectrum file
+-1.000000  # Major axis jitter in mas (-1 = no jitter)
+-1.000000  # Minor axis jitter in mas
+0.000000  # Angle of jitter major axis in deg from +X axis
+1  # Number of positions
+507 507  # Position 1
+5.919  # PSF diameter in arcsecs
+1  # Skip wavelengths with low weights? (0=no)
+0.010000  # Min good weight limit coefficient
+13  # Number of wavelengths
+1.398900 0.040031 512 # Wavelength 1 (microns), weight, grid size
+1.420530 0.086378 512 # Wavelength 2 (microns), weight, grid size
+1.442490 0.089114 512 # Wavelength 3 (microns), weight, grid size
+1.464800 0.087272 512 # Wavelength 4 (microns), weight, grid size
+1.487440 0.084027 512 # Wavelength 5 (microns), weight, grid size
+1.510440 0.087121 512 # Wavelength 6 (microns), weight, grid size
+1.533800 0.080862 512 # Wavelength 7 (microns), weight, grid size
+1.557510 0.082448 512 # Wavelength 8 (microns), weight, grid size
+1.581590 0.080471 512 # Wavelength 9 (microns), weight, grid size
+1.606050 0.077040 512 # Wavelength 10 (microns), weight, grid size
+1.630880 0.073599 512 # Wavelength 11 (microns), weight, grid size
+1.656100 0.071208 512 # Wavelength 12 (microns), weight, grid size
+1.681700 0.060425 512 # Wavelength 13 (microns), weight, grid size
+128  # Integrated PSF dimension (pixels)
+0.080000  # Integrated PSF scaling (arcsec)
+1.000000  # Subsampling factor (1 = normal)
+2  #  Use mirror maps? (0 = no, otherwise yes)
+1  #  Adjust for WFC3 field aberrations? (0=no)
+1  #  Apply WFC3 pixel scattering (0=no)
+0  # Write out pupil map at 1st wavelength?
+0  # Write out wave map at 1st wavelength?
+0  # Write out crit psf at 1st wavelength & stop?
+# Pupil Table :  wfc3_ir.pup
+# Do not change the order of these entries!
+# Date : April 2008
+# Preliminary version of WFC3 IR channel pupil information for Tiny Tim 7.0.
+#
+# Added preliminary distortion coefficients, from Colin Cox, March 2008
+# Added preliminary cold-mask information from George Hartig, March 2008
+#
+# Date : Feb 2011  
+#  Swapped X/Y coeffs for astig and coma
+#  Using charge diffusion kernel from WFC3 ISR 2008-41
+# Date : March 2011
+#  Updated V2,V3 (pupil) coordinates for reference position and camera center
+#    using uab1537ci_idc.fits
+#----------------------------------------------------------------------------
+#
+# Optical Telescope Assembly pupil information
+#
+ 0.330  = OTA Secondary Mirror Radius
+ 0.022  = OTA Spider Width 
+#
+# Mirror pad positions and radii
+#
+  0.8921  0.0000 0.065 = OTA Pad 1 (V3, V2, Pad Radius)
+ -0.4615  0.7555 0.065 = OTA Pad 2
+ -0.4564 -0.7606 0.065 = OTA Pad 3
+#
+# WFC3 IR wavelength range
+#
+  900 1700  = min, max detector wavelength (nm)
+#
+# WFC3 IR cold mask obscuration parameters 
+# These are from George Hartig, they are close, but not the same as the old NICMOS ones.
+#
+ 0.354 = WFC3 IR Secondary radius
+ 0.061 = WFC3 IR Spider width
+ 0.9755 = WFC3 IR Outer radius of cold mask
+#
+# Mask position
+#
+ 0.0 0.0 = Mask X,Y positions
+#
+# WFC3 IR camera rotation (relative to OTA)
+#
+  135.0  = WFC3 IR camera rotation
+#
+# Pixel size (arcsecs)
+#
+   0.13 = WFC3 IR pixel size
+#
+# Axial offset of WFC3 IR camera
+#
+  0.0 0.0 = WFC3 IR Camera 2 V2,V3 axial offset
+#
+#  WFC3 IR field dependent aberration coefficients (in microns)
+#
+# Focus
+#
+ -1.20318149e-02 -1.01187543e-04 7.07476814e-07 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 7.69803251e-04 4.23580589e-08 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -7.67207830e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+#
+# X astig
+# SWAPPED
+ 1.33063083e-03 1.68392660e-04 -8.55061473e-09 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -2.58073858e-05 -3.33276120e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -2.00120320e-08 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+#
+# Y astig
+# SWAPPED
+ -8.35400173e-03 5.13194852e-04 -3.99141208e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 2.01150767e-04 -3.92886164e-08 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -1.97495797e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+#
+# X coma
+# SWAPPED
+ 2.31206647e-02 1.81284830e-04 -5.30494748e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -1.39564501e-04 3.97479493e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -2.06559126e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+#
+# Y coma
+# SWAPPED
+1.25930198e-02 -5.80506052e-04 5.25377957e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ -5.67486735e-04 4.09168135e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 2.15934792e-06 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+#
+# WFC3 IR geometric distortion coefficients; used to convert
+# detector X,Y position to telescope V2,V3
+#
+# V2,V3 (pupil) coordinates of reference position
+# 
+  -1.0190  0.5070     = in arcsec
+#
+# Detector X,Y coordinates of reference position
+#
+   507 507  = pixels
+#
+# V2, V3 (pupil) coordinates of WFC3 IR camera center
+#
+  -1.0190  0.5070     = in arcsec
+#
+# X,Y -> V2 transform coefficients (4th order)
+#
+-7.834721E-6          1.354925E-1
+-2.666651E-10          3.238674E-6        -1.381910E-10
+3.737046E-14         1.843860E-11  4.087322E-13         3.758686E-12
+0.0 0.0 0.0 0.0 0.0
+#
+# X,Y -> V3 transform coefficients
+#
+ 1.210825E-1          8.907462E-6
+3.563704E-6         2.909743E-10          8.195221E-7
+2.676912E-11        -3.854757E-13         1.336036E-11        -5.999974E-14
+0.0 0.0 0.0 0.0 0.0
+#
+# V2,V3 -> X
+#
+ 4.775553E-4           7.380483E0
+-7.414314E-8         -1.457858E-3          1.313760E-7
+ -1.377528E-10          5.729815E-7  -1.438840E-9          5.382542E-8  
+0.0 0.0 0.0 0.0 0.0
+#
+# V2,V3 -> Y
+#
+ 8.258834E0         -5.429441E-4 
+ -2.009371E-3          1.718983E-7         -3.689799E-4
+ 8.509658E-7          1.510508E-9          2.749957E-7         1.801569E-10
+0.0 0.0 0.0 0.0 0.0
+#
+# Diffusion kernels to model the IPC effect
+#
+#  ********* Note - these are based on vac measurements kindly provided
+#            by George Hartig in May 2008 - they are empirical and match what was seen in thermal vac.
+#            See WFC3 ISR 2008-41.
+#
+# These numbers are known to be a function of quadrant and readout, and not determined as
+# a function of wavelength. The values here are averages.
+#
+1.000  = Wavelength (microns) of kernel 1
+#
+# Kernel 1
+#
+0.0007 0.025  0.0007
+0.025  0.897  0.025
+0.0007 0.025  0.0007
+#
+1.300  = Wavelength (microns) of kernel 2
+#
+# Kernel 2
+#
+0.0007 0.025  0.0007
+0.025  0.897  0.025
+0.0007 0.025  0.0007
+#
+1.600  = Wavelength (microns) of kernel 3
+#
+# Kernel 3
+#
+0.0007 0.025  0.0007
+0.025  0.897  0.025
+0.0007 0.025  0.0007
+#
+# Additional field dependent charge diffusion relation coefficients
+# Currently these are just place holders. 
+#
+  2  = number of wavelengths at which coefficients are defined
+#
+#
+  1.000  = wavelength 1
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+#
+  1.600  = wavelength 2
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0
+# Zernike file for WFC3 IR Channel
+# March 2008  Initial implementation (no aberrations)
+# March 2011  Set Z4-Z8 terms to non-zero to activate coeffs in .pup file
+  547.     # Reference wavelength (nm)
+  22       # Last Zernike in file
+  0.       # Z1 = (Not used)
+  0.       # Z2 = X (V2) tilt
+  0.       # Z3 = Y (V3) tilt
+0.000000 # Z4 = Focus
+  1e-12    # Z5 = 0 degree astigmatism
+  1e-12    # Z6 = 45 degree astigmatism
+  1e-12    # Z7 = X (V2) coma
+  1e-12    # Z8 = Y (V3) coma
+  0.       # Z9 = X (V2) clover
+  0.       # Z10 = Y (V3) clover
+  0.       # Z11 = 3rd order spherical
+  0.       # Z12 = 0 degree Spherical astigmatism
+  0.       # Z13 = 45 degree Spherical astigmatism
+  0.       # Z14 = X (V2) Ashtray
+  0.       # Z15 = Y (V3) Ashtray
+  0.       # Z16
+  0.       # Z17
+  0.       # Z18
+  0.       # Z19
+  0.       # Z20
+  0.       # Z21
+  0.       # Z22 = 5th order spherical
