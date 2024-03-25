@@ -6,7 +6,7 @@ The 1_HST_lens_processing folder contains all the notebooks used to download and
 
 The 2_dolphin_modelling folder contains the directory used to run the lens modelling software [dolphin](https://github.com/ajshajib/dolphin).  
 
-The 3_model_parameters folder contains the lens model parameters (in the Data subfolder) and additional analysis notebooks used to obtain the lens parameters from the dolphin output files.
+The 3_model_parameters folder contains the lens model parameters tables (in the Data subfolder) and additional analysis notebooks used to obtain the lens parameters from the dolphin output files.
 
 The 4_hierarc_analysis folders contains the directory used to run the hierarchical analysis software [hierArc](https://github.com/sibirrer/hierArc/).
 

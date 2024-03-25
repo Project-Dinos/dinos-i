@@ -2,7 +2,7 @@ This folder contains the directory used to run the lens modelling software dolph
 
 * data :  Contains all the HST images and PSF needed for lens modelling
 * log : Contains the modelling logs (empty in this repo)
-* output : Contains an example lens modelling output, for the complete lens modelling output files, please contact Chin Yi Tan (chinyi@uchicago.edu) or Anowar Shajib (ajshajib@uchicago.edu).
+* output : Contains an example lens modelling output. The complete lens modelling output files can be found at (https://www.projectdinos.com/dinos-i)
 * settings : contains all the  modelling settings for all the DINOS-I lenses
 
 The notebook folder contains various notebooks used to run the dolphin modelling pipeline the notebooks are describe below.

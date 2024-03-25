@@ -4,3 +4,5 @@ To run hierarc we run the following notebooks
 1. Preprocessing/Prepreprocessor.ipynb
 2. Preprocessing/kinematic_sample_sl2s_preprocessing.py or kinematic_sample_slacs_preprocessing.py
 3. Analysis/SLACS_SL2S_constraints.py
+
+The model prediced velocity dispersions can be calculated with the using notebook at Analysis/calculate_vel_model.ipynb
