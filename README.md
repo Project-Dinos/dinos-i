@@ -1,4 +1,4 @@
-# dinos-i 
+# Dinos I 
 
 This repository is used to host data products and notebooks for the analysis in [Tan et. al 2024](https://ui.adsabs.harvard.edu/abs/2023arXiv231109307T/abstract), which is the first paper of the Project Dinos series whose aims to study elliptical galaxy evolution using strong-lensing galaxies.
 
