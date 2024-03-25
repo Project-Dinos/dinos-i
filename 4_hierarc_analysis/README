@@ -1,0 +1,6 @@
+This folder contains notebooks needed to run hierarc. The hierarc_plots.ipynb can be used to produce the corner plot for the population-level parameters from our hierarchical Bayesian analysis (hierarc).
+
+To run hierarc we run the following notebooks
+1. Preprocessing/Prepreprocessor.ipynb
+2. Preprocessing/kinematic_sample_sl2s_preprocessing.py or kinematic_sample_slacs_preprocessing.py
+3. Analysis/SLACS_SL2S_constraints.py
