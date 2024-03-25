@@ -1,6 +1,6 @@
 # dinos-i 
 
-This repository is used to host data products and notebooks for the analysis in [Tan et. al 2024](https://arxiv.org/abs/2311.09307), which is the first paper of the Project Dinos series whose aims to study elliptical galaxy evolution using strong-lensing galaxies.
+This repository is used to host data products and notebooks for the analysis in [Tan et. al 2024](https://ui.adsabs.harvard.edu/abs/2023arXiv231109307T/abstract), which is the first paper of the Project Dinos series whose aims to study elliptical galaxy evolution using strong-lensing galaxies.
 
 The 1_HST_lens_processing folder contains all the notebooks used to download and preprocess the HST images used in the analysis. All the HST data used in the analysis can be found in 2_dolphin_modelling/data.
 
