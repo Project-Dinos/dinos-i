@@ -10,4 +10,6 @@ The 3_model_parameters folder contains the lens model parameters tables (in the 
 
 The 4_hierarc_analysis folders contains the directory used to run the hierarchical analysis software [hierArc](https://github.com/sibirrer/hierArc/).
 
+All the lens models from this project, including MCMC chains, are released at https://www.projectdinos.com/dinos-i.
+
 
