@@ -1,5 +1,6 @@
-# OS generated files #
-######################
+*.pyc
 .DS_Store
-.DS_Store?
-dolphin_modelling/.DS_Store
+.ipynb_checkpoints
+.idea/
+.cache/
+.pytest_cache/
