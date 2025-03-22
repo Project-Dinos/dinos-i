@@ -4,7 +4,7 @@ This repository is used to host data products and notebooks for the analysis in 
 
 The 1_HST_lens_processing folder contains all the notebooks used to download and preprocess the HST images used in the analysis. All the HST data used in the analysis can be found in 2_dolphin_modelling/data.
 
-The 2_dolphin_modelling folder contains the directory used to run the lens modelling software [dolphin](https://github.com/ajshajib/dolphin).  
+The 2_dolphin_modelling folder contains the directory used to run the lens modelling software [dolphin v0.0.1](https://github.com/ajshajib/dolphin).  
 
 The 3_model_parameters folder contains the lens model parameters tables (in the Data subfolder) and additional analysis notebooks used to obtain the lens parameters from the dolphin output files.
 
